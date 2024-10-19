@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 6</title>
+    <!--Forms-->
+    <!--Input tag-->
+    <!--action attribute-->
+    <!--POST is used to send data to a server to create/update a resource. The data sent to the server with POST is stored in the request body of the HTTP request: POST(ek type ka HTTP protocol hota hai)-->
+    <!--name-value property-->
+    <!--Label tag-->
+    <!--input type :date -->
+    <!--input type : file-->
+    <!--input type : color-->
+    <!--input type : range-->
+    <!--input type : button-->
+    <!--input type : submit-->
+    <!--input type : radio-->
+    <!--input type : checkbox-->
+    <!--input type : select-->
+    <!--input type : textarea-->
+    <!--iframe tag-->
+</head>
+<body>
+    <form action="/contact-me">
+        <label for="email" >UserName:</label>
+        <input type="text" id="email" placeholder="email" required="true"><br>
+
+        <label for="user_password"> Password:</label>
+        <input type="password" id="user_password" type="password"><br>
+        <input type="submit">
+    </form>
+    <br><hr>
+
+
+    <form action="/submit.php" method="post">
+        <input type="text" name="UserName" value="john">
+        Date : <input type="date"><br>
+        File: <input type="file"><br>
+        Color: <input type="color"><br>
+        Price Range: <input type="range"><br>
+        Poke Me: <input type="button" value="Click Me"><br>
+        submit: <input type="submit">
+    </form>
+    <hr>
+
+    <form>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    </form><br>
+    <hr>
+
+    <form>
+        <label for="c language">c language</label>
+        <input type="checkbox" id="c language" name="language" value="C">
+        <br>
+        <label for="c++ language">c++ language</label>
+        <input type="checkbox" id="c++ language" name="language" value="C++">
+        <br>
+        <label for="Java language">Java language</label>
+        <input type="checkbox" id="Java language" name="language" value="Java">
+        <br>
+    </form>
+
+    <form>
+        <label for="country">Choose a country</label>
+        <select name="country" id="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="china">china</option>
+            <option value="Russia">Russia</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+            <option value="Other">Other</option>
+        </select>
+
+    <br>
+    </form>
+    <textarea id="story" rows="10" cols="4" >
+    Please write a story defining in about yourself
+    </textarea><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lH0sYax5Yg0?si=rLd0xVm9aFT2dpL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe src="https://en.wikipedia.org/wiki/Cricket" width="800"
+    height="300"></iframe>
+</body>
+</html>
